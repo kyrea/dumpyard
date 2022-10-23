@@ -9,12 +9,7 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: rodrigoarias/auto-label-per-user@v1.0.0
-        with:
-             git-token: ${{ secrets.MY_GITHUB_TOKEN }}
-             default-label: "hacktober-accepted"
-             user-team-map: |
-              {
-                "NotKyoyo":"auto-merge"
-              }
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.MY_GITHUB_TOKEN }}"
         
