@@ -31,6 +31,6 @@ jobs:
           merge-method: rebase
           do-not-merge-labels: block-merge
           required-labels: hacktober-accepted
-          pull-request-author-associations: NotKyoyo
+          pull-request-author-associations: NotKyoyo,kyrea
           pull-request: ${{ github.event.inputs.pull-request }}
           dry-run: false
